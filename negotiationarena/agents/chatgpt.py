@@ -30,7 +30,10 @@ class ChatGPTAgent(Agent):
             if seed is None
             else seed
         )
-        self.client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+
+        #changed the base URL
+        self.client = OpenAI(base_url="https://tritonai-api.ucsd.edu",
+                             api_key=os.environ.get("OPENAI_API_KEY"))
         self.temperature = temperature
         self.max_tokens = max_tokens
 

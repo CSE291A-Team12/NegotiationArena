@@ -31,8 +31,8 @@ class LLama2ChatAgent(Agent):
         self.temperature = temperature
         self.max_tokens = max_tokens
         self.client = openai.OpenAI(
-            base_url="https://api.endpoints.anyscale.com/v1",
-            api_key=os.environ.get("ANY_SCALE"),
+            base_url="https://router.huggingface.co/v1",
+            api_key=os.environ.get("HF_TOKEN"),
         )
 
     def __deepcopy__(self, memo):
@@ -51,6 +51,7 @@ class LLama2ChatAgent(Agent):
         return result
 
     def init_agent(self, system_prompt, role):
+
         if AGENT_ONE in self.agent_name:
             # we use the user role to tell the assistant that it has to start.
 
