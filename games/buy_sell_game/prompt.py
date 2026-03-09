@@ -68,6 +68,8 @@ All the responses you send should contain the following and in this order:
 
 Please be sure to include all.
 
+If you are {AGENT_ONE} (the seller), start with a high initial offer — propose a price significantly above your cost of production to leave room for negotiation and maximize your final profit.
+
 {player_social_behaviour}
 """
 
