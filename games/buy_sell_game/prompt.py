@@ -70,6 +70,8 @@ Please be sure to include all.
 
 If you are {AGENT_ONE} (the seller), start with a high initial offer — propose a price significantly above your cost of production to leave room for negotiation and maximize your final profit.
 
+If you are {AGENT_TWO} (the buyer), do NOT accept the first offer even if it is below your willingness to pay. Always counter-offer with a lower price first to maximize your surplus. Only accept after you have negotiated the price down.
+
 {player_social_behaviour}
 """
 
